@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: rgb(90, 163, 38); */
+  /* background-image: url(https://png.pngtree.com/background/20210717/original/pngtree-brazilian-independence-day-yellow-simple-background-picture-image_1437326.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 0px 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-image: url(https://png.pngtree.com/background/20210717/original/pngtree-brazilian-independence-day-yellow-simple-background-picture-image_1437326.jpg);
+  z-index: 3;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-weight: bold;
+}
+
+.navigation__item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.navigation__item a:hover {
+  color: #5454d4;
+}
+
+.search input {
+  background: transparent;
+  border: 3px solid var(--red-color);
+  color: var(--red-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*  hero */
+
+.hero {
+  margin-top: 0px;
+  padding-top: 0;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 45px;
+  gap: 120px;
+}
+
+#cartnj {
+  width: 145%;
+  height: 90%;
+  cursor: pointer;
+}
+
+.wrapper__left__item {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: var(--font-color);
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.h3-plagiat {
+  color: var(--secondary-color);
+}
+
+.biography {
+  margin-top: 10px;
+}
+
+.wrapper__right {
+  margin-left: 10px;
+}
+
+.cartable__field {
+  display: flex;
+  gap: 200px;
+  margin-left: 45px;
+  margin-top: 13px;
+}
+
+.cartable__left {
+  color: var(--secondary-color);
+}
+#cart2 {
+  margin-left: -45px;
+}
+
+#cart3 {
+  margin-left: 5px;
+}
+
+#cart4 {
+  margin-left: -55px;
+}
+
+#cart5 {
+  margin-left: 28px;
+}
+
+#cart6 {
+  margin-left: -85px;
+}
+
+/* skills */
+
+.skill-title {
+  margin-top: 210px;
+  color: var(--font-color);
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.skill {
+  margin-top: 75px;
+  width: 100%;
+  width: 700px;
+  padding: 0 20px;
+}
+
+.skill-bar {
+  height: 12px;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.skill-bar__item {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.skill-percentage {
+  height: 12px;
+  background: #420dd3;
+  border-radius: 4px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-percentage::before {
+  content: attr(a);
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--font-color);
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-percentage::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  top: -13px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin-top: 10px;
+}
